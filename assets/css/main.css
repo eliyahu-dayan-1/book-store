@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+
+button{
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+img{
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+
+
+/* content */
+
+.screen{
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    visibility: hidden;
+}
+
+.page-container{
+    min-height: 100vh;
+}
+
+/* nav bar */
+header, footer, .header a{
+    background-color: rgb(106, 150, 192);
+    color: black;
+}
+
+header{
+    padding: 0px 20px;
+}
+
+.logo-container > *:first-child{
+    margin-right: 20px;
+}
+
+.logo{
+    font-size: 2.5rem;
+}
+
+header .logo{
+    padding:  20px 0px;
+}
+
+.link-container > *{
+    font-size: 20;
+}
+
+.link-container > *:not(:last-child){
+    margin-right: 10px;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+header .active{
+    font-weight: bold;
+}
+
+header img{
+    width: 60px;
+}
+
+/* main */
+
+main{
+    width: 100%;
+    flex-grow: 1;
+    padding: 40px;
+    position: relative;
+    background-color: gainsboro;
+}
+
+.welcom-sentences{
+    font-size: 70px;
+    font-family: lobster;
+    cursor: pointer;
+}
+
+.book-detail, .book-user-review, .book-reviews{
+    margin-top: 20px;
+    width: 90vw;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: skyblue;
+}
+
+.book-detail  p  span, .book-preview p span, .book-reviews p span{
+    font-weight: bold;
+}
+
+.book-detail .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.book-detail  p {
+    width: 400px
+}
+
+.book-detail >img {
+    margin-bottom: 10px;
+}
+
+.book-detail >img + p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.book-detail .show-more{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.green{
+    color: yellowgreen;
+}
+
+.red{
+    color: red;
+}
+
+
+
+.book-reviews div >*:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.book-reviews .review{
+ height: 150px;
+}
+.book-reviews .review > img{
+    height: 100%;
+}
+
+.book-user-review  button{
+    background-color: greenyellow;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.filter-form input{
+    border: 0;
+    outline: none;
+    background: 0;
+    cursor: pointer;
+}
+
+.filter-form {
+    background-color: rgb(175, 194, 211);
+}
+
+.filter-form {
+    margin-bottom: 20px;
+}
+
+.filter-form input{
+    font-size: 1.5rem;
+    width: 100px;
+    transition: 0.5s;
+    background-color: rgb(203, 216, 184);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.filter-form input >*:not(:last-child){
+    margin-right: 10px;
+}
+
+.filter-form > button{
+    background-color: greenyellow;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.books-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-preview{
+    background-image: linear-gradient(to left, #bfc7d3, #a1cfdf, #84d8d3, #8fdbac, #c0d67b);
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.book-preview:not(:last-child){
+    margin-right: 10px;
+}
+
+.book-preview > img{
+    width: 100%;
+}
+
+.book-preview .further-details{
+    text-decoration: underline;
+    color: gray;
+}
+
+/* footer */
+
+footer .logo-container img {
+    height: 30px;;
+}
+
+footer{
+    padding: 10px;
+}
+
+footer .logo{
+    font-size: 25px;
+    
+}
